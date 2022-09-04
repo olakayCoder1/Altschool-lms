@@ -4,7 +4,7 @@ import logo from '../../assets/olakay.jpeg'
 function Introduction() {
   return (
     <div>
-        <div className=' w-full  bg-gradient-to-r from-[#5d61cf] to-[#0f0f22] text-center text-gray-100 gap-8 py-32'>
+        <div className=' w-full  bg-gradient-to-r from-[#5d61cf] to-[#0f0f22] text-center text-gray-100 gap-8 py-36'>
             <div className=' w-full h-full flex flex-col gap-8 '>
                 <h2 className=' font-bold text-5xl '>My Account</h2>
                 <p className=' text-sm font-light'>Welcome to AltSchool Africa, here’s your dashboard</p>
