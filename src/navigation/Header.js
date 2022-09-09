@@ -19,7 +19,7 @@ function Header(props) {
                     className=' p-3 hover:bg-gray-300 rounded-full cursor-pointer'>
                   <GiHamburgerMenu className=' text-xl font-semibold text-gray-500'/>
                 </p>
-              <h2 className=' ml-2 text-xl font-light'><spann className="hidden md:inline-block "><span className=' font-normal text-blue-500'>G</span>oogle</spann> <span>Podcasts</span></h2>
+              <h2 className=' ml-2 text-xl font-light'><spann className="hidden md:inline-block "><span className=' font-normal text-blue-500'>Z</span>enith</spann> <span>Media</span></h2>
           </div>
           <div className=' grow'>
             <div className=' lg:grow h-full max-w-[700px]'>

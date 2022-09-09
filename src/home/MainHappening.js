@@ -16,6 +16,7 @@ function MainHappeningCard() {
                 <span className=' text-gray-500 font-normal text-xs'>September 6 at 12:37pm</span>
             </div>
         </div>
+        <h3 className=' text-base font-semibold bg-white px-2'>Installing flask without venv</h3>
         <p className='bg-white text-gray-600 text-sm font-medium p-2 pb-4'>
             Installing flask without venv, means you installed it globally,
             these frameworks version are changed everyday, 

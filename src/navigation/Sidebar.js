@@ -26,7 +26,7 @@ function Sidebar(props) {
               className=' p-3 hover:bg-gray-300 rounded-full cursor-pointer'>
             <GiHamburgerMenu className=' text-xl font-semibold text-gray-500'/>
           </p>
-        <h2 className=' ml-2 text-xl font-light'><spann className="hidden md:inline-block "><span className=' font-normal text-blue-500'>G</span>oogle</spann> <span>Podcasts</span></h2>
+        <h2 className=' ml-2 text-xl font-light'><spann className="hidden md:inline-block "><span className=' font-normal text-blue-500'>Z</span>enith</spann> <span>Media</span></h2>
         </div>
         <div className='px-6 w-full flex items-center text-sm font-medium py-3 mr-2 rounded-r-full bg-blue-100 text-blue-700'>
               <AiFillHome  className=" text-lg"/>
@@ -55,11 +55,11 @@ function Sidebar(props) {
               className=' p-3 hover:bg-gray-300 rounded-full cursor-pointer'>
             <GiHamburgerMenu className=' text-xl font-semibold text-gray-500'/>
           </p>
-        <h2 className=' ml-2 text-xl font-light'><spann className="hidden md:inline-block "><span className=' font-normal text-blue-500'>G</span>oogle</spann> <span>Podcasts</span></h2>
+        <h2 className=' ml-2 text-xl font-light'><spann className="hidden md:inline-block "><span className=' font-normal text-blue-500'>Z</span>enith</spann> <span>Media</span></h2>
         </div>
         <div className='px-6 w-full flex items-center text-sm font-medium py-3 mr-2 rounded-r-full bg-blue-100 text-blue-700'>
               <AiFillHome  className=" text-lg"/>
-              <h2 className=' ml-2'>Explore show</h2>
+              <h2 className=' ml-2'>For You</h2>
           </div>
           <SidebarRow title="Quiz" Icon={MdOutlineQuiz} />
           <SidebarRow title="Queue" Icon={CgPlayListAdd} />
