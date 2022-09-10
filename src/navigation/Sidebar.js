@@ -18,8 +18,8 @@ function Sidebar(props) {
     props.mobileNav()
     props.handleComputerNav()
 }
-console.log(props.mobile)
-  return (
+
+return (
 
     <>
     <div className='hidden md:block md:w-[20%] min-w-[200px] bg-white z-50  fixed  md:static top-0 left-0 bottom-0 '>
@@ -42,18 +42,18 @@ console.log(props.mobile)
           </p>
           <h2 className=' ml-2 text-xl font-light font-logo'>Deyyzenith</h2>
         </div>
-          <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
-          <SidebarRow title="Quiz" Icon={MdOutlineQuiz} path='/xyzw'/>
-          <SidebarRow title="Queue" Icon={CgPlayListAdd} path='/xyzc'/>
-          <SidebarRow title="Write Story" Icon={AiOutlinePlus} path='/xyzf'/>
+          <SidebarRow title="For You" Icon={AiFillHome} path='/xyzposts'/>
+          <SidebarRow title="Quiz" Icon={MdOutlineQuiz} path='/xyzposts/users'/>
+          <SidebarRow title="Queue" Icon={CgPlayListAdd} path='/xyzposts/1'/>
+          <SidebarRow title="Write Story" Icon={AiOutlinePlus} path='/xyzposts/create'/>
           <hr className=' my-4 text-gray-300'/> 
-          <SideNoIcon title="Settings" path='/xyz'/>
-          <SideNoIcon title="Help" path='/xyz'/>
-          <SideNoIcon title="Publisher guidelines" path='/xyz'/>
-          <SideNoIcon title="Send feedback" path='/xyz'/>
-          <hr className=' my-4 text-gray-300' path='/xyz'/> 
-          <SidebarRow title="Get the android app" Icon={BsBoxArrowInUpRight} path='/xyz'/>
-          <SidebarRow title="Get the IOS app" Icon={BsBoxArrowInUpRight} path='/xyz'/>
+          <SideNoIcon title="Account" path='/account'/>
+          <SideNoIcon title="Help" path='/'/>
+          <SideNoIcon title="Publisher guidelines" path='#'/>
+          <SideNoIcon title="Send feedback" path='#'/>
+          <hr className=' my-4 text-gray-300' path='#'/> 
+          <SidebarRow title="Get the android app" Icon={BsBoxArrowInUpRight} path='#'/>
+          <SidebarRow title="Get the IOS app" Icon={BsBoxArrowInUpRight} path='#'/>
           <p className=' text-xs font-base text-gray-400 px-6 my-4'>Privacy. Terms</p>
       </div> 
     </div>
@@ -68,18 +68,18 @@ console.log(props.mobile)
           </p>
           <h2 className=' ml-2 text-xl font-light font-logo'>Deyyzenith</h2>
         </div>
-          <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
-          <SidebarRow title="Quiz" Icon={MdOutlineQuiz} path='/xyzw'/>
-          <SidebarRow title="Queue" Icon={CgPlayListAdd} path='/xyzc'/>
-          <SidebarRow title="Write Story" Icon={AiOutlinePlus} path='/xyzf'/>
+          <SidebarRow title="For You" Icon={AiFillHome} path='/xyzposts'/>
+          <SidebarRow title="Quiz" Icon={MdOutlineQuiz} path='/xyzposts/users'/>
+          <SidebarRow title="Queue" Icon={CgPlayListAdd} path='/xyzposts/1'/>
+          <SidebarRow title="Write Story" Icon={AiOutlinePlus} path='/xyzposts/create'/>
           <hr className=' my-4 text-gray-300'/> 
-          <SideNoIcon title="Settings" path='/xyz'/>
-          <SideNoIcon title="Help" path='/xyz'/>
-          <SideNoIcon title="Publisher guidelines" path='/xyz'/>
-          <SideNoIcon title="Send feedback" path='/xyz'/>
-          <hr className=' my-4 text-gray-300' path='/xyz'/> 
-          <SidebarRow title="Get the android app" Icon={BsBoxArrowInUpRight} path='/xyz'/>
-          <SidebarRow title="Get the IOS app" Icon={BsBoxArrowInUpRight} path='/xyz'/>
+          <SideNoIcon title="Account" path='/account'/>
+          <SideNoIcon title="Help" path='#'/>
+          <SideNoIcon title="Publisher guidelines" path='#'/>
+          <SideNoIcon title="Send feedback" path='#'/>
+          <hr className=' my-4 text-gray-300' path='#'/> 
+          <SidebarRow title="Get the android app" Icon={BsBoxArrowInUpRight} path='#'/>
+          <SidebarRow title="Get the IOS app" Icon={BsBoxArrowInUpRight} path='#'/>
           <p className=' text-xs font-base text-gray-400 px-6 my-4'>Privacy. Terms</p>
       </div> 
     </div>

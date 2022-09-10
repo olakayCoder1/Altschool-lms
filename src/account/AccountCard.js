@@ -6,7 +6,7 @@ function AccountCard() {
     const [ open , setOpen ] = useState(false)
 
   return (
-    <div className='w-[95%] sm:w-[80%] md:w-[70%] mx-auto bg-white rounded-md p-3'>
+    <div className='w-full mx-auto bg-white rounded-md p-3'>
             <div className=' flex flex-col  w-full'>
                 <h2 className=' text-base font-bold'>Profile Information</h2>
                 <div className=' flex justify-between items-center'>
@@ -21,17 +21,20 @@ function AccountCard() {
             {open && (
                 <form className=' flex gap-2 flex-col'>
                     <div>
-                        <label for="small-input" class="block mb-2 text-sm font-medium text-gray-700">Username</label>
-                        <input type="text" id="small-input" class="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-0 outline-none focus:outline-none focus:border-gray-200   "  placeholder='olakayCoder1'/>
+                        <label htmlFor="small-input" className="block mb-2 text-sm font-medium text-gray-700">Username</label>
+                        <input type="text" id="small-input" className="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-0 outline-none focus:outline-none focus:border-gray-200   "  placeholder='olakayCoder1'/>
                     </div>
                     <div>
-                        <label for="small-input" class="block mb-2 text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" id="small-input" class="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-0 outline-none focus:outline-none focus:border-gray-200   " placeholder='olakay@gmail.com'/>
+                        <label htmlFor="small-input" className="block mb-2 text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="small-input" className="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-0 outline-none focus:outline-none focus:border-gray-200   " placeholder='olakay@gmail.com'/>
                     </div>
                     <div>
-                        <label for="small-input" class="block mb-2 text-sm font-medium text-gray-700">Bio</label>
-                        <input type="text" id="small-input" class="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-0 outline-none focus:outline-none focus:border-gray-200   " placeholder='tags as an image. You don’t need to use the word' />
+                        <label htmlFor="small-input" className="block mb-2 text-sm font-medium text-gray-700">Bio</label>
+                        <input type="text" id="small-input" className="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-0 outline-none focus:outline-none focus:border-gray-200   " placeholder='tags as an image. You don’t need to use the word' />
                     </div>
+                    <p className='font-normal text-sm p-1 w-fit px-3 rounded-md bg-blue-700 text-gray-100 hover:bg-blue-800 cursor-pointer flex items-center gap-2 place-content-center'>
+                        <span>Save changes</span>
+                    </p>
                 </form>
             )}
       </div>
