@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily:{
         merriweather:[ 'Merriweather', 'serif'],
-        noto: ['Noto Sans', 'sans-serif']
+        noto: ['Noto Sans', 'sans-serif'],
+        logo : ['Rampart One', 'cursive']
       }
     },
   },

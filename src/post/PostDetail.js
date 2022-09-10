@@ -8,12 +8,11 @@ import PostDetailAuthorPostList from './PostDetailAuthorPostList'
 function PostDetail() {
 
   return (
-    <div className='w-full lg:w-[76%] mt-16 min-w-[600px] flex gap-2 justify-between overflow-y-auto '>
-        <div className='w-full lg:w-[65%]'>
+    <div className='w-full  mt-16 md:min-w-[600px] flex gap-2 justify-between overflow-y-auto  '>
+        <div className='w-full lg:w-[68%]'>
             <PostDetailContent />
           </div>
           <PostDetailAuthorPostList />
-      
     </div>
   )
 }

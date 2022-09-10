@@ -4,13 +4,13 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import {AiFillHome,AiOutlinePlus} from 'react-icons/ai'
 import {CgPlayListAdd} from 'react-icons/cg'
 import {MdOutlineQuiz} from 'react-icons/md'
-import SidebarRow from './SidebarRow'
-import SideNoIcon from './SideNoIcon'
+
 import {BiSearch} from 'react-icons/bi'
+import SidebarRow from '../navigation/SidebarRow'
 
 
 
-function Sidebar(props) {
+function AccountSideBar(props) {
 
 
   function toggleBar(){
@@ -43,17 +43,21 @@ console.log(props.mobile)
           <h2 className=' ml-2 text-xl font-light font-logo'>Deyyzenith</h2>
         </div>
           <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
-          <SidebarRow title="Quiz" Icon={MdOutlineQuiz} path='/xyzw'/>
+          <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
+          <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
+          <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
+          <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
+          {/* <SidebarRow title="Quiz" Icon={MdOutlineQuiz} path='/xyzw'/>
           <SidebarRow title="Queue" Icon={CgPlayListAdd} path='/xyzc'/>
-          <SidebarRow title="Write Story" Icon={AiOutlinePlus} path='/xyzf'/>
+          <SidebarRow title="Write Story" Icon={AiOutlinePlus} path='/xyzf'/> */}
           <hr className=' my-4 text-gray-300'/> 
-          <SideNoIcon title="Settings" path='/xyz'/>
-          <SideNoIcon title="Help" path='/xyz'/>
+          {/* <Sideba title="Settings" path='/xyz'/> */}
+          {/* <SideNoIcon title="Help" path='/xyz'/>
           <SideNoIcon title="Publisher guidelines" path='/xyz'/>
-          <SideNoIcon title="Send feedback" path='/xyz'/>
+          <SideNoIcon title="Send feedback" path='/xyz'/> */}
           <hr className=' my-4 text-gray-300' path='/xyz'/> 
-          <SidebarRow title="Get the android app" Icon={BsBoxArrowInUpRight} path='/xyz'/>
-          <SidebarRow title="Get the IOS app" Icon={BsBoxArrowInUpRight} path='/xyz'/>
+          {/* <SidebarRow title="Get the android app" Icon={BsBoxArrowInUpRight} path='/xyz'/>
+          <SidebarRow title="Get the IOS app" Icon={BsBoxArrowInUpRight} path='/xyz'/> */}
           <p className=' text-xs font-base text-gray-400 px-6 my-4'>Privacy. Terms</p>
       </div> 
     </div>
@@ -87,4 +91,4 @@ console.log(props.mobile)
   )
 }
 
-export default Sidebar
+export default AccountSideBar

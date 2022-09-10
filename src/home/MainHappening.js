@@ -8,8 +8,8 @@ import {BsChatDots} from 'react-icons/bs'
 function MainHappeningCard() {
 
     return (
-      <div className='  bg-gray-200 border rounded-md'>
-        <div className=' bg-white flex items-center gap-2 p-2  rounded-tl-md rounded-tr-md'>
+      <div className='w-full bg-gray-200 border md:rounded-md'>
+        <div className=' bg-white flex items-center gap-2 p-2  md:rounded-tl-md md:rounded-tr-md'>
             <div className=' w-10 h-10 bg-cover bg-no-repeat bg-center rounded-full ' style={{ backgroundImage: `url(${olakay})`}}></div>
             <div className=' flex flex-col'>
                 <h2 className=' text-gray-700 font-medium text-sm flex items-center hover:text-blue-600 cursor-pointer'>olakayCoder1</h2>
@@ -21,9 +21,10 @@ function MainHappeningCard() {
             Installing flask without venv, means you installed it globally,
             these frameworks version are changed everyday, 
             if you install it globally, you will start having conflicting version issues 
-            later on as you progress and build more applications <span className=' p-1 bg-gray-50 rounded-2xl shadow-md hover:bg-gray-200 float-right cursor-pointer'>....See more</span>
+            later on as you progress and build more applications 
+            {/* <span className=' p-1 bg-gray-50 rounded-2xl shadow-md hover:bg-gray-200 float-right cursor-pointer'>....See more</span> */}
         </p>
-        <div className=' max-w-[700px]'>
+        <div className=' md:max-w-[700px]'>
             <img src={olakay} alt='post-image' className=' w-full' />
         </div>
         <div className='bg-white flex justify-between items-center p-2'>
@@ -40,7 +41,7 @@ function MainHappeningCard() {
             <p className=' w-3/6  flex items-center place-content-center p-1 cursor-pointer hover:bg-gray-200 rounded-md'><AiOutlineLike className=' w-6 h-6'/></p>
             <p className=' w-3/6  flex items-center place-content-center p-1 cursor-pointer hover:bg-gray-200 rounded-md'><BsChatDots className=' w-6 h-6'/></p>
         </div>
-        <div className=' bg-white flex items-center gap-2 p-2  rounded-bl-md rounded-br-md'>
+        <div className=' bg-white flex items-center gap-2 p-2  md:rounded-bl-md md:rounded-br-md'>
             <div className=' w-10 h-10 bg-cover bg-no-repeat bg-center rounded-full ' style={{ backgroundImage: `url(${olakay})`}}></div>
             <div className='grow'>
                 <input type='text' placeholder='Type comment...'
@@ -55,12 +56,13 @@ function MainHappeningCard() {
 
 function MainHappening() {
   return (
-    <div className=' w-full'>
-        <div className=' max-w-[480px] mx-auto flex flex-col gap-4 '>
+    <div className='w-full'>
+        <div className='w-full mx-auto max-w-[480px] px-4 flex flex-col gap-4 '>
             <MainHappeningCard />
             <MainHappeningCard />
             <MainHappeningCard />
         </div>
+        
       
     </div>
   )

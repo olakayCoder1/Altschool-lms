@@ -1,65 +1,28 @@
-// import Index from './myaccount/pages/Index';
-
-// function App() {
-//   return (
-//     <div className=" text-gray-700 font-noto">
-//       <Index/>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-import Header from './navigation/Header';
-import Sidebar from './navigation/Sidebar';
-import MainContent from './home/MainContent';
-import { useState } from 'react';
 import { BrowserRouter as Router , Route , Routes } from 'react-router-dom'
-import HomeContent from './home/HomeContent';
-import PostDetail from './post/PostDetail';
+import Register from './authentication/Register';
+import Login from './authentication/Login';
+import ForgetPassword from './authentication/ForgetPassword';
+import ResetPassword from './authentication/ResetPassword';
+import AuthenticatedRoutes from './AuthenticatedRoutes'
+import UserProfile from './other-user/UserProfile';
+import Index from './myaccount/pages/Index'
+import AccountContainer from './account/AccountContainer';
 
 function App() {
-    
-
-  const [ showNav , setShowNav ] = useState(false);
-  const [ lgNav , setLgNav ] = useState(true);
-  const [ mobileNav , setMobileNav ] = useState(false)
-
-  function handleNav(){
-    setShowNav(!showNav)
-  }
-  function handleMobileNav(){
-    setMobileNav(!mobileNav)
-  }
-
-  function computerNav(){
-    setLgNav(!lgNav);
-    console.log('Computer')
-  }
   
   return (
-    <div className='px-3 lg:px-0 w-full h-screen'>
-      {/* HEADER SECTION */}
-      <Header handleNav={handleNav} mobileNav={handleMobileNav} lgNavHandle={computerNav}/>
-      {/* MAIN SECTION  */}
-      
-      <div className='w-full h-full flex gap-10'>
-      {/* SIDE BAR  */}
-        <Sidebar navDisplay={showNav} mobile={mobileNav} mobileNav={handleMobileNav} handleNav={handleNav} computerNav={lgNav}/>
-
-        <Router>
-          <Routes>
-            <Route path='/' element={<HomeContent />} />
-            <Route path='/posts' element={<PostDetail />} />
-          </Routes>
-        </Router>
-
-        
-        
-      
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/forget-password' element={<ForgetPassword />} />
+        <Route path='/reset-password' element={<ResetPassword />} />
+        <Route path='/xyzposts/*' element={<AuthenticatedRoutes />} />
+        <Route path='/users/*' element={<UserProfile />} />
+        <Route path='/account' element={<AccountContainer />} />
+      </Routes>
+    </Router>
+   
   );
 }
 

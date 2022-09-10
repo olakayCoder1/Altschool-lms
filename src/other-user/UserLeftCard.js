@@ -2,12 +2,12 @@ import React from 'react'
 import olakay from '../assets/olakay.jpeg'
 import {BsDot} from 'react-icons/bs'
 import {AiOutlinePlus} from 'react-icons/ai'
-import PostDetailAuthorPostCard from './PostDetailAuthorPostCard'
 
-function PostDetailAuthorPostList() {
+
+function UserLeftCard() {
   return (
     <div className='hidden sm:block sm:w-[35%] bg-white'>
-        <div className=' w-full   p-4'>
+        <div className=' w-full p-4'>
             <div className=' w-full h-fit border-gray-200 py-4'>
               <div className=' w-20 h-20 bg-cover bg-no-repeat bg-center rounded-full ' style={{ backgroundImage: `url(${olakay})`}}></div>
               <div className=' flex flex-col gap-2'>
@@ -20,24 +20,9 @@ function PostDetailAuthorPostList() {
                   </p>
               </div>
             </div>
-            
-            <div className='flex flex-col gap-4 overflow-y-auto'>
-                <h2 className=' py-4'>olakayCoder1 posts</h2>
-                <PostDetailAuthorPostCard />
-                <PostDetailAuthorPostCard />
-                <PostDetailAuthorPostCard />
-                <PostDetailAuthorPostCard />
-                <PostDetailAuthorPostCard />
-                <PostDetailAuthorPostCard />
-                <PostDetailAuthorPostCard />
-                <PostDetailAuthorPostCard />
-                <PostDetailAuthorPostCard />
-                <PostDetailAuthorPostCard />
-            </div>
         </div>
-      
     </div>
   )
 }
 
-export default PostDetailAuthorPostList
+export default UserLeftCard

@@ -7,7 +7,7 @@ import PostCommentDetail from './PostCommentDetail'
 
 function PostDetailContent() {
   return (
-    <div className='max-w-[550px] mx-auto bg-gray-200 border rounded-md'>
+    <div className='max-w-[480px] mx-auto bg-gray-200  rounded-md'>
         <div className=' bg-white flex items-center gap-2 p-2  rounded-tl-md rounded-tr-md'>
             <div className=' w-10 h-10 bg-cover bg-no-repeat bg-center rounded-full ' style={{ backgroundImage: `url(${olakay})`}}></div>
             <div className=' flex flex-col'>
