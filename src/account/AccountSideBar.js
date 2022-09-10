@@ -7,6 +7,7 @@ import {MdOutlineQuiz} from 'react-icons/md'
 
 import {BiSearch} from 'react-icons/bi'
 import SidebarRow from '../navigation/SidebarRow'
+import SideNoIcon from '../navigation/SideNoIcon'
 
 
 
@@ -29,7 +30,7 @@ console.log(props.mobile)
                 className=' p-3 hover:bg-gray-300 rounded-full cursor-pointer'>
                 <GiHamburgerMenu className=' text-xl font-semibold text-gray-500'/>
               </p>
-            <h2 className=' ml-2 text-xl font-light font-logo'>Deyyzenith</h2>
+            <h2 className=' ml-2 text-xl font-light font-logo'>Dzenith</h2>
         </div>
       </div>
 
@@ -42,22 +43,14 @@ console.log(props.mobile)
           </p>
           <h2 className=' ml-2 text-xl font-light font-logo'>Deyyzenith</h2>
         </div>
-          <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
-          <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
-          <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
-          <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
-          <SidebarRow title="For You" Icon={AiFillHome} path='/xyz'/>
-          {/* <SidebarRow title="Quiz" Icon={MdOutlineQuiz} path='/xyzw'/>
-          <SidebarRow title="Queue" Icon={CgPlayListAdd} path='/xyzc'/>
-          <SidebarRow title="Write Story" Icon={AiOutlinePlus} path='/xyzf'/> */}
+          <SidebarRow title="Account" Icon={AiFillHome} path='/xyz'/>
+          <SidebarRow title="Security" Icon={AiFillHome} path='/xyz'/>
+          
+          
           <hr className=' my-4 text-gray-300'/> 
-          {/* <Sideba title="Settings" path='/xyz'/> */}
-          {/* <SideNoIcon title="Help" path='/xyz'/>
-          <SideNoIcon title="Publisher guidelines" path='/xyz'/>
-          <SideNoIcon title="Send feedback" path='/xyz'/> */}
+          
           <hr className=' my-4 text-gray-300' path='/xyz'/> 
-          {/* <SidebarRow title="Get the android app" Icon={BsBoxArrowInUpRight} path='/xyz'/>
-          <SidebarRow title="Get the IOS app" Icon={BsBoxArrowInUpRight} path='/xyz'/> */}
+         
           <p className=' text-xs font-base text-gray-400 px-6 my-4'>Privacy. Terms</p>
       </div> 
     </div>

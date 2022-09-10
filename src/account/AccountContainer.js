@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState }  from 'react'
 import AccountSideBar from './AccountSideBar'
+import AccountHeader from './AccountHeader'
+import Account from './Account';
 
 function AccountContainer() {
 
@@ -21,11 +23,12 @@ function AccountContainer() {
 
   return (
     <div className=' lg:w-10/12 mx-auto h-screen flex justify-between border'>
-    <AccountSideBar navDisplay={showNav} mobile={mobileNav} mobileNav={handleMobileNav} handleComputerNav={computerNav} handleNav={handleNav} computerNav={lgNav}/>
-  <div className=' md:w-[78%] lg:w-[80%]  overflow-y-auto border-l-[1px]'>
-   
-  </div>
-</div>
+      <AccountSideBar navDisplay={showNav} mobile={mobileNav} mobileNav={handleMobileNav} handleComputerNav={computerNav} handleNav={handleNav} computerNav={lgNav}/>
+      <div className='w-full md:w-[78%] lg:w-[80%]  overflow-y-auto border-l-[1px]'>
+        <AccountHeader />
+        <Account />
+      </div>
+    </div>
   )
 }
 
