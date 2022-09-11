@@ -7,6 +7,7 @@ import AuthenticatedRoutes from './AuthenticatedRoutes'
 import UserProfile from './other-user/UserProfile';
 import Index from './myaccount/pages/Index'
 import AccountContainer from './account/AccountContainer';
+import Welcome from './welcome/Welcome';
 
 function App() {
   
@@ -20,10 +21,12 @@ function App() {
         <Route path='/xyzposts/*' element={<AuthenticatedRoutes />} />
         <Route path='/users/*' element={<UserProfile />} />
         <Route path='/account' element={<AccountContainer />} />
+        <Route path='' element={<Welcome />} />
       </Routes>
     </Router>
    
   );
+
 }
 
 export default App;

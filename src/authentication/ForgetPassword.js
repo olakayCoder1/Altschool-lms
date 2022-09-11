@@ -1,13 +1,14 @@
 import React from 'react'
-import zenithLogo from '../assets/zenithLog.svg'
+import laptop from '../assets/laptop.jpeg'
 import {Link } from 'react-router-dom'
+import Typed from 'react-typed';
 
 
 function ForgetPassword() {
   return (
     <div className=' flex'>
-      <div className='hidden md:block md:w-[70%] h-screen bg-no-repeat bg-cover bg-center bg-gray-400 rounded-md' style={{ backgroundImage: `url(${zenithLogo})` }}></div>
-      <div className='w-full md:w-[30%] p-4 text-sm text-gray-500 font-medium'>
+      <div className='hidden md:block md:w-[70%] h-screen bg-no-repeat bg-cover bg-center bg-gray-400 ' style={{ backgroundImage: `url(${laptop})` }}></div>
+      <div className='w-full md:w-[30%] p-4 text-sm text-gray-500 font-medium bg-white'>
             <div className=' w-full flex justify-end items-end'>
                 <div className=' flex items-center gap-2'>
                     <Link to='/login'>
@@ -22,7 +23,13 @@ function ForgetPassword() {
             {/* <p>Enter the email that associate with your account we will send an email with instructions to reset your account.</p>
             <p>We have send a password recover instructions to your email.</p> */}
             <form className='py-12 w-[80%]  mx-auto'>
-                <h2 className='text-gray-700 text-3xl font-bold font-noto'>Reset password</h2>
+                {/* <h2 className='text-gray-700 text-3xl font-bold font-noto'>Reset password</h2> */}
+                <Typed className='text-gray-700 text-xl lg:text-3xl font-bold font-logo'
+                    strings={['Reset password']}
+                    typeSpeed={120}
+                    backSpeed={150}
+                    loop
+                />
                 <p className=' mb-6 my-3'>Enter the email that associate with your account we will send an email with instructions to reset your account.</p>
 
                 <div className=' py-3'>   
