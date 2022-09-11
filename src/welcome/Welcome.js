@@ -3,10 +3,12 @@ import laptop from '../assets/laptop.jpeg'
 import WelcomeNav from './WelcomeNav';
 import Typed from 'react-typed';
 import WelcomeFooter from './WelcomeFooter';
-
+import { useNavigate } from 'react-router-dom';
 
 
 const Hero = () => {
+
+  let navigate = useNavigate()
   return (
     <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img' style={{ backgroundImage: `url(${laptop})`}}>
       {/* Overlay */}
@@ -20,7 +22,7 @@ const Hero = () => {
                     loop
                 />
         <p className='py-5 text-xl'>Get instance updates from your friends, quizes and what is happening around the world</p>
-        <button className='px-8 py-2 border'>Get started</button>
+        <button onClick={()=> navigate('/register')} className='px-8 py-2 border'>Get started</button>
       </div>
     </div>
   );

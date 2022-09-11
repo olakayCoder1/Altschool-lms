@@ -1,12 +1,17 @@
 import React from 'react'
 import laptop from '../assets/laptop.jpeg'
-import {Link } from 'react-router-dom'
+import {Link ,useNavigate} from 'react-router-dom'
 import Typed from 'react-typed';
 
 function Login() {
+    let navigate = useNavigate()
   return (
     <div className=' flex'>
-      <div className='hidden md:block md:w-[70%] h-screen bg-no-repeat bg-cover bg-center bg-gray-400  ' style={{ backgroundImage: `url(${laptop})` }}></div>
+      <div className='hidden md:block md:w-[70%] h-screen bg-no-repeat bg-cover bg-center bg-gray-400  ' style={{ backgroundImage: `url(${laptop})` }}>
+      <h1 onClick={()=> navigate('/')}
+            className='w-full text-5xl font-bold text-gray-50 cursor-pointer font-logo p-6'>Dzenith.</h1>
+      </div>
+      
       <div className='w-full md:w-[30%] p-4 text-sm text-gray-500 font-medium bg-white'>
             <div className=' w-full flex justify-end items-end'>
                 <div className=' flex items-center gap-2'>
@@ -41,7 +46,7 @@ function Login() {
                     </div>
                     {/* <p id="outlined_error_help" className="mt-2 text-xs text-red-600 dark:text-red-400"><span class="font-medium">Oh, snapp!</span> Some error message.</p>     */}
                 </div>
-                <p className='w-fit p-3 px-6 border rounded-3xl bg-blue-600 text-gray-50 cursor-pointer hover:bg-blue-700 '>Login</p>
+                <p onClick={()=> navigate('/xyzposts')} className='w-fit p-3 px-6 border rounded-3xl bg-blue-600 text-gray-50 cursor-pointer hover:bg-blue-700 '>Login</p>
                 <p className=' py-3'>Forget password ? 
                 <Link to='/forget-password'>
                 <span className=' text-blue-600 hover:underline hover:cursor-pointer ml-2'>Reset</span>

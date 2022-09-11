@@ -1,13 +1,16 @@
 import React from 'react'
 import laptop from '../assets/laptop.jpeg'
-import {Link } from 'react-router-dom'
+import {Link, useNavigate } from 'react-router-dom'
 import Typed from 'react-typed';
 
 function Register() {
+
+    let navigate = useNavigate()
   return (
     <div className=' flex'>
       <div className='hidden md:block md:w-[70%] h-screen bg-no-repeat bg-cover bg-center bg-gray-400   ' style={{ backgroundImage: `url(${laptop})` }}>
-        {/* <h1 className='w-full text-5xl font-bold text-[#00df9a] font-logo p-4'>Dzenith.</h1> */}
+        <h1 onClick={()=> navigate('/')}
+            className='w-full text-5xl font-bold text-gray-50 cursor-pointer font-logo p-6'>Dzenith.</h1>
       </div>
       <div className='w-full md:w-[30%] p-4 text-sm text-gray-500 font-medium bg-white'>
             <div className=' w-full flex justify-end items-end'>
